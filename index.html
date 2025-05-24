@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Flower</title>
+  <link rel="stylesheet" href="styles1.css">
+  <style>
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+  </style>
+</head>
+<body class="landing">
+  <div class="landing-container">
+    <img src="imgs/logo.png" alt="Logo Black Flower" class="logo">
+    <h1>The Black Flower Exists</h1>
+    <button class="btn" onclick="goToColecao()">Ver Coleção</button>
+  </div>
+
+  <script>
+    function goToColecao() {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = "colecao.html";
+      }, 500); // mesmo tempo da transição
+    }
+  </script>
+</body>
+</html>
